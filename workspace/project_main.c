@@ -104,9 +104,9 @@ void test_saveload(void) {
 
 int test_fft_pipeline(void){
     int ret = run_fft_pipeline(
-        "data/data_2sin20t.txt",
-        "data/fft_2sin20t_real.txt",
-        "data/fft_2sin20t_imag.txt");
+        "data/data_2sin20t+sin16t-cos35t-3sin(5t-25deg).txt",
+        "data/fft_stupid_real.txt",
+        "data/fft_stupid_imag.txt");
 
     if (ret == 0)
         puts("FFT pipeline finished successfully.");
