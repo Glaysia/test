@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -g
 LDFLAGS = -lm
 
-SRCS = project_main.c complex.c dataframe.c save_load.c
+SRCS = project_main.c complex.c dataframe.c save_load.c fft.c fft_io.c fft_pipeline.c
 OBJS = $(SRCS:.c=.o)
 TARGET = project_main
 

@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "complex.h": "c",
-        "dataframe.h": "c"
+        "dataframe.h": "c",
+        "fft.h": "c"
     }
 }
