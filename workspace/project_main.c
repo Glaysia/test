@@ -3,6 +3,7 @@
 #include "complex.h"
 #include "dataframe.h"
 #include "save_load.h"
+#include "fft_pipeline.h"
 
 void test_complex(void){
     Complex z1 = complex_make(3.0,  4.0);
@@ -101,10 +102,29 @@ void test_saveload(void) {
     df_destroy(df);
 }
 
-int main(void) {
+int test_fft_pipeline(void){
+    int ret = run_fft_pipeline(
+        "data/data_2sin20t.txt",
+        "data/fft_2sin20t_real.txt",
+        "data/fft_2sin20t_imag.txt");
+
+    if (ret == 0)
+        puts("FFT pipeline finished successfully.");
+    else
+        printf("FFT pipeline failed (code %d).\n", ret);
+
+    return ret;
+
+}
+
+int main(void)
+{
     // test_complex();
     // test_dataframe();
-    test_saveload();
+    // test_saveload();
+    int result = test_fft_pipeline();
+
+    printf("result : %d", result);
 
 
     return 0;
