@@ -1,7 +1,7 @@
 # gen_data.py
 import math
 
-SIZE = 50000
+SIZE = 65536
 START = -10 * math.pi
 END   =  10 * math.pi
 STEP  = (END - START) / (SIZE - 1)

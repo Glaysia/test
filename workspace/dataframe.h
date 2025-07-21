@@ -4,7 +4,7 @@
 
 #include <stddef.h>
 
-#define DF_SIZE    50000
+#define DF_SIZE    65536
 #define DF_START  (-10.0f * 3.14159265358979323846f)
 #define DF_END    ( 10.0f * 3.14159265358979323846f)
 
