@@ -2,6 +2,9 @@
     "files.associations": {
         "complex.h": "c",
         "dataframe.h": "c",
-        "fft.h": "c"
+        "fft.h": "c",
+        "freq_axis.h": "c",
+        "fft_io.h": "c",
+        "math.h": "c"
     }
 }
